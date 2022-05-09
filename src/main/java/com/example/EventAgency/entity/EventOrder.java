@@ -1,6 +1,7 @@
 package com.example.EventAgency.entity;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
@@ -14,4 +15,6 @@ public class EventOrder {
     User user;
     @ManyToMany
     List<Employee> employeeList;
+    Timestamp datetime;
+    String address;
 }

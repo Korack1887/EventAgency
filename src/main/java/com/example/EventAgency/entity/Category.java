@@ -8,6 +8,7 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
+    @Column(length=50, nullable = false)
     String name;
     @ManyToMany
     List<Costume> costumeList;

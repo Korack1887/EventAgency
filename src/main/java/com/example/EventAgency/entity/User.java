@@ -8,7 +8,13 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
+    @Column(length=50, nullable = false)
     String name;
+    @Column(length=13, nullable = false)
+    String phoneNumber;
+
+    public User() {
+    }
 
     public int getId() {
         return id;
@@ -33,9 +39,4 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-    public User() {
-    }
-
-    String phoneNumber;
 }

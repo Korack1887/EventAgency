@@ -20,7 +20,7 @@ class UserServiceTest {
     @Test
     public void whenApplicationStarts_thenHibernateCreatesInitialRecords() {
         List<User> users = userService.findAll();
-
-        Assert.assertEquals(users.get(1),1);
+        System.out.println(users.get(0));
+        Assert.assertEquals(users.get(0),1);
     }
 }

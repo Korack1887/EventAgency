@@ -8,6 +8,7 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
+    @Column(length=50, nullable = false)
     private String name;
     @ManyToMany
     List<Category> categoryList;

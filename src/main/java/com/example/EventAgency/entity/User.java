@@ -2,6 +2,7 @@ package com.example.EventAgency.entity;
 
 
 import javax.persistence.*;
+import java.sql.Date;
 
 @Entity
 public class User {
@@ -12,6 +13,10 @@ public class User {
     String name;
     @Column(length=13, nullable = false)
     String phoneNumber;
+    @Column(length=100, nullable = false)
+    String email;
+    @Column(nullable = false)
+    Date date;
 
     public User() {
     }

@@ -1,7 +1,7 @@
 package com.example.EventAgency.server.service;
 
 import com.example.EventAgency.entity.User;
-import com.example.EventAgency.server.repository.UserRepository;
+import com.example.EventAgency.server.repository.UserService;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +15,7 @@ import java.util.List;
 @SpringBootTest
 class UserServiceTest {
     @Autowired
-    private UserRepository userService;
+    private UserService.UserRepository userService;
 
     @Test
     public void whenApplicationStarts_thenHibernateCreatesInitialRecords() {

@@ -3,15 +3,13 @@ package com.example.EventAgency.entity;
 import javax.persistence.*;
 
 @Entity
-public class Costume {
+public class Scenario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
-    @Column(length = 50, nullable = false)
+    @Column(length=100, nullable = false)
     String name;
-    @Column(nullable = false)
-    int amount;
-    @Column(length = 500, nullable = false)
+    @Column(length=1000, nullable = false)
     String description;
     @Column(nullable = false)
     float price;
